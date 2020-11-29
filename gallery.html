@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+
+    <!--    CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--    JavaScript-->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="home">
+        <a href="index.html" title="Home"><i class="fa fa-home fa-5x"></i></a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="images/img1.jpg" alt="Mountain" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img2.jpg" alt="Mountain" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img3.jpg" alt="Mountain" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img4.jpg" alt="Lake" style="width:100%" onclick="gallery(this);">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="images/img5.jpg" alt="River" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img6.jpg" alt="Mountain" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img7.jpg" alt="City" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img8.jpg" alt="Mountain" style="width:100%" onclick="gallery(this);">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="images/img9.jpg" alt="Stars" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img10.jpg" alt="Apple" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img11.jpg" alt="Sunset" style="width:100%" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="images/img12.jpg" alt="Abstract" style="width:100%" onclick="gallery(this);">
+        </div>
+    </div>
+
+    <div class="containerImage">
+        <span onclick="zoom(this)" class="closeButton">&times;</span>
+        <img id="expandedImage">
+        <div id="imageText"></div>
+    </div>
+    </div>
+</body>
+
+</html>

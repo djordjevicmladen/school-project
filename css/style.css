@@ -1,0 +1,283 @@
+/* index page */
+.container {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+#backgroud {
+    height: 200px;
+    background: skyblue;
+    border: 3px solid red;
+    border-radius: 15px;
+    position: relative;
+    animation-name: moveAnimation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes moveAnimation {
+    from {
+        top: 0;
+    }
+    to {
+        top: 25px;
+    }
+}
+
+#welcome {
+    width: 150px;
+    height: 70px;
+    border-radius: 100%;
+    position: relative;
+    animation-name: widthAnimation, heightAnimation;
+    animation-duration: 6s, 4s;
+    animation-delay: 0s, 0s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate, alternate;
+    animation-timing-function: linear, linear;
+}
+
+@keyframes widthAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 150px);
+    }
+}
+
+@keyframes heightAnimation {
+    from {
+        top: 0;
+    }
+    to {
+        top: 130px;
+    }
+}
+
+nav {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: skyblue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: indianred;
+}
+
+.active {
+    background-color: red;
+}
+
+.container .column {
+    float: left;
+    width: 49%;
+}
+
+.container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.card .title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.card button:hover, a:hover {
+    opacity: 0.7;
+}
+
+.card .icon {
+    margin: 24px 0;
+}
+
+#quoteBox {
+    width: 20%;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+#quote {
+    padding: 5px 5px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.container footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+/* gallery page */
+.gallery {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 24%;
+    padding: 5px;
+}
+
+.column img {
+    opacity: 0.8;
+    height: 250px;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 30px;
+}
+
+.containerImage {
+    position: relative;
+    display: none;
+}
+
+#imageText {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#expandedImage {
+    margin-top: 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+
+/* ordering food page */
+#form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text], input[type=number], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.5;
+}
+
+#price {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+#title {
+    text-align: center;
+}
+
+/* growing numbers page */
+td {
+    border: 5px solid darkseagreen;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#timer {
+    color: skyblue;
+    text-align: center;
+}
+
+/* all pages */
+#home {
+    text-align: center;
+}
